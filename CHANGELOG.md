@@ -1,6 +1,84 @@
+# Change Log
+
+All notable changes to this project will be documented in this file.
+
 <a name="unreleased"></a>
 ## [Unreleased]
 
+
+
+<a name="v3.15.0"></a>
+## [v3.15.0] - 2020-08-13
+
+- feat: Add JMX and Node exporter TCP ports for Kafka ([#186](https://github.com/terraform-aws-modules/terraform-aws-security-group/issues/186))
+
+
+<a name="v3.14.0"></a>
+## [v3.14.0] - 2020-08-13
+
+- feat: aws-provider version bump to >= 2.42, < 4.0 ([#184](https://github.com/terraform-aws-modules/terraform-aws-security-group/issues/184))
+
+
+<a name="v3.13.0"></a>
+## [v3.13.0] - 2020-07-20
+
+- feat: Add support for Solr ([#181](https://github.com/terraform-aws-modules/terraform-aws-security-group/issues/181))
+
+
+<a name="v3.12.0"></a>
+## [v3.12.0] - 2020-07-03
+
+- feat: Added optional revoke_rules_on_delete functionality (required for EMR) ([#179](https://github.com/terraform-aws-modules/terraform-aws-security-group/issues/179))
+
+
+<a name="v3.11.0"></a>
+## [v3.11.0] - 2020-06-24
+
+- feat: Updated version requirements to support Terraform 0.13 ([#178](https://github.com/terraform-aws-modules/terraform-aws-security-group/issues/178))
+
+
+<a name="v3.10.0"></a>
+## [v3.10.0] - 2020-05-13
+
+- fix: Fixed MinIO rules formatting
+- feat: Adding support for MinIO ([#174](https://github.com/terraform-aws-modules/terraform-aws-security-group/issues/174))
+
+
+<a name="v3.9.0"></a>
+## [v3.9.0] - 2020-05-11
+
+- feat: Adding support for prometheus and alertmanager ([#173](https://github.com/terraform-aws-modules/terraform-aws-security-group/issues/173))
+
+
+<a name="v3.8.0"></a>
+## [v3.8.0] - 2020-04-20
+
+- Updated README
+- feat: Added support for kibana dashboard - 5601-tcp ([#170](https://github.com/terraform-aws-modules/terraform-aws-security-group/issues/170))
+
+
+<a name="v3.7.0"></a>
+## [v3.7.0] - 2020-04-17
+
+- docs: Fixed README after merge
+- feat: Added support for graphite-statsd stack ([#169](https://github.com/terraform-aws-modules/terraform-aws-security-group/issues/169))
+
+
+<a name="v3.6.0"></a>
+## [v3.6.0] - 2020-04-16
+
+- chore: Autoformatting fixes after merge
+- fix: Don't use var.(in|e)gress_ipv6_cidr_blocks on security group sourced (in|e)gress ([#148](https://github.com/terraform-aws-modules/terraform-aws-security-group/issues/148))
+- chore: Updated comment with correct UDP protocol number (fixes [#137](https://github.com/terraform-aws-modules/terraform-aws-security-group/issues/137))
+
+
+<a name="v3.5.0"></a>
+## [v3.5.0] - 2020-04-16
+
+- fix: Set requirements for AWS provider and Terraform
+- fix: Add Kafka broker rule for TLS port ([#155](https://github.com/terraform-aws-modules/terraform-aws-security-group/issues/155))
+- feat: Added support of grafana dashboard - 3000-tcp ([#167](https://github.com/terraform-aws-modules/terraform-aws-security-group/issues/167))
+- feat: Added support of kubernetes api server - 6443-tcp ([#166](https://github.com/terraform-aws-modules/terraform-aws-security-group/issues/166))
 
 
 <a name="v3.4.0"></a>
@@ -12,14 +90,12 @@
 <a name="v3.3.0"></a>
 ## [v3.3.0] - 2020-01-07
 
-- Updated CHANGELOG
 - Empty the known issues section + pre-commit ([#150](https://github.com/terraform-aws-modules/terraform-aws-security-group/issues/150))
 
 
 <a name="v3.2.0"></a>
 ## [v3.2.0] - 2019-11-14
 
-- Updated CHANGELOG
 - Updated pre-commit hooks
 - Add ActiveMQ rules ([#143](https://github.com/terraform-aws-modules/terraform-aws-security-group/issues/143))
 
@@ -27,7 +103,6 @@
 <a name="v3.1.0"></a>
 ## [v3.1.0] - 2019-07-21
 
-- Updated CHANGELOG
 - Fix Splunk Web ([#132](https://github.com/terraform-aws-modules/terraform-aws-security-group/issues/132))
 - Updated terraform_docs pre-commit hook
 
@@ -35,14 +110,12 @@
 <a name="v3.0.1"></a>
 ## [v3.0.1] - 2019-05-27
 
-- Updated CHANGELOG
 - Fixed computed example in README ([#122](https://github.com/terraform-aws-modules/terraform-aws-security-group/issues/122))
 
 
 <a name="v3.0.0"></a>
 ## [v3.0.0] - 2019-05-26
 
-- Updated CHANGELOG
 - Upgrade module to support Terraform 0.12 ([#120](https://github.com/terraform-aws-modules/terraform-aws-security-group/issues/120))
 
 
@@ -70,7 +143,6 @@
 ## [v2.14.0] - 2019-02-17
 
 - Updated docs after [#104](https://github.com/terraform-aws-modules/terraform-aws-security-group/issues/104)
-- Merge pull request [#104](https://github.com/terraform-aws-modules/terraform-aws-security-group/issues/104) from mvasilenko/add-mongodb-cluster-rules
 - add rules for MongoDB cluster ports
 
 
@@ -78,7 +150,6 @@
 ## [v2.13.0] - 2019-02-06
 
 - Run pre-commit
-- Merge pull request [#102](https://github.com/terraform-aws-modules/terraform-aws-security-group/issues/102) from mvasilenko/add-rabbitmq-to-rules-tf
 - add rule for rabbitmq
 
 
@@ -86,7 +157,6 @@
 ## [v2.12.0] - 2019-02-06
 
 - Run pre-commit
-- Merge pull request [#100](https://github.com/terraform-aws-modules/terraform-aws-security-group/issues/100) from mvasilenko/add-mongodb-to-rules-tf
 - add name rule for mongodb
 
 
@@ -292,7 +362,6 @@
 ## [v1.7.0] - 2018-01-10
 
 - Add NFS tcp port ([#28](https://github.com/terraform-aws-modules/terraform-aws-security-group/issues/28))
-- [ci skip] Get more Open Source Helpers ([#26](https://github.com/terraform-aws-modules/terraform-aws-security-group/issues/26))
 
 
 <a name="v1.6.0"></a>
@@ -347,16 +416,13 @@
 <a name="v1.1.4"></a>
 ## [v1.1.4] - 2017-10-26
 
-- Merge pull request [#13](https://github.com/terraform-aws-modules/terraform-aws-security-group/issues/13) from Shapeways/master
 - Merge branch 'master' of github.com:Shapeways/terraform-aws-security-group
 - Add Puppet to rules.tf
-- Merge pull request [#1](https://github.com/terraform-aws-modules/terraform-aws-security-group/issues/1) from terraform-aws-modules/master
 
 
 <a name="v1.1.3"></a>
 ## [v1.1.3] - 2017-10-20
 
-- Merge pull request [#9](https://github.com/terraform-aws-modules/terraform-aws-security-group/issues/9) from Shapeways/master
 - Add DNS udp and tcp to rules.
 
 
@@ -369,14 +435,12 @@
 <a name="v1.1.1"></a>
 ## [v1.1.1] - 2017-10-11
 
-- Merge pull request [#5](https://github.com/terraform-aws-modules/terraform-aws-security-group/issues/5) from grem11n/master
 - Update default all-all rule
 
 
 <a name="v1.1.0"></a>
 ## [v1.1.0] - 2017-10-06
 
-- Merge pull request [#3](https://github.com/terraform-aws-modules/terraform-aws-security-group/issues/3) from terraform-aws-modules/remove_default_ip_cidrs
 - Removed default cidr for ingress rules, fixed self variable name
 
 
@@ -387,7 +451,18 @@
 - Initial commit
 
 
-[Unreleased]: https://github.com/terraform-aws-modules/terraform-aws-security-group/compare/v3.4.0...HEAD
+[Unreleased]: https://github.com/terraform-aws-modules/terraform-aws-security-group/compare/v3.15.0...HEAD
+[v3.15.0]: https://github.com/terraform-aws-modules/terraform-aws-security-group/compare/v3.14.0...v3.15.0
+[v3.14.0]: https://github.com/terraform-aws-modules/terraform-aws-security-group/compare/v3.13.0...v3.14.0
+[v3.13.0]: https://github.com/terraform-aws-modules/terraform-aws-security-group/compare/v3.12.0...v3.13.0
+[v3.12.0]: https://github.com/terraform-aws-modules/terraform-aws-security-group/compare/v3.11.0...v3.12.0
+[v3.11.0]: https://github.com/terraform-aws-modules/terraform-aws-security-group/compare/v3.10.0...v3.11.0
+[v3.10.0]: https://github.com/terraform-aws-modules/terraform-aws-security-group/compare/v3.9.0...v3.10.0
+[v3.9.0]: https://github.com/terraform-aws-modules/terraform-aws-security-group/compare/v3.8.0...v3.9.0
+[v3.8.0]: https://github.com/terraform-aws-modules/terraform-aws-security-group/compare/v3.7.0...v3.8.0
+[v3.7.0]: https://github.com/terraform-aws-modules/terraform-aws-security-group/compare/v3.6.0...v3.7.0
+[v3.6.0]: https://github.com/terraform-aws-modules/terraform-aws-security-group/compare/v3.5.0...v3.6.0
+[v3.5.0]: https://github.com/terraform-aws-modules/terraform-aws-security-group/compare/v3.4.0...v3.5.0
 [v3.4.0]: https://github.com/terraform-aws-modules/terraform-aws-security-group/compare/v3.3.0...v3.4.0
 [v3.3.0]: https://github.com/terraform-aws-modules/terraform-aws-security-group/compare/v3.2.0...v3.3.0
 [v3.2.0]: https://github.com/terraform-aws-modules/terraform-aws-security-group/compare/v3.1.0...v3.2.0
