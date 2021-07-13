@@ -7,6 +7,33 @@ All notable changes to this project will be documented in this file.
 
 
 
+<a name="v4.3.0"></a>
+## [v4.3.0] - 2021-06-28
+
+- feat: Add rules for SMTP, SMTPS, SaltStack ([#220](https://github.com/terraform-aws-modules/terraform-aws-security-group/issues/220))
+
+
+<a name="v4.2.0"></a>
+## [v4.2.0] - 2021-05-27
+
+- feat: Create group optionally ([#218](https://github.com/terraform-aws-modules/terraform-aws-security-group/issues/218))
+
+
+<a name="v4.1.0"></a>
+## [v4.1.0] - 2021-05-27
+
+- chore: Fixed GH actions to be the same as in other terraform-aws-modules ([#217](https://github.com/terraform-aws-modules/terraform-aws-security-group/issues/217))
+- chore: Updated versions in README
+
+
+<a name="v4.0.0"></a>
+## [v4.0.0] - 2021-04-26
+
+- feat: Shorten outputs (removing this_) ([#210](https://github.com/terraform-aws-modules/terraform-aws-security-group/issues/210))
+- chore: update documentation and pin `terraform_docs` version to avoid future changes ([#208](https://github.com/terraform-aws-modules/terraform-aws-security-group/issues/208))
+- chore: add ci-cd workflow for pre-commit checks ([#206](https://github.com/terraform-aws-modules/terraform-aws-security-group/issues/206))
+
+
 <a name="v3.18.0"></a>
 ## [v3.18.0] - 2021-02-20
 
@@ -470,7 +497,11 @@ All notable changes to this project will be documented in this file.
 - Initial commit
 
 
-[Unreleased]: https://github.com/terraform-aws-modules/terraform-aws-security-group/compare/v3.18.0...HEAD
+[Unreleased]: https://github.com/terraform-aws-modules/terraform-aws-security-group/compare/v4.3.0...HEAD
+[v4.3.0]: https://github.com/terraform-aws-modules/terraform-aws-security-group/compare/v4.2.0...v4.3.0
+[v4.2.0]: https://github.com/terraform-aws-modules/terraform-aws-security-group/compare/v4.1.0...v4.2.0
+[v4.1.0]: https://github.com/terraform-aws-modules/terraform-aws-security-group/compare/v4.0.0...v4.1.0
+[v4.0.0]: https://github.com/terraform-aws-modules/terraform-aws-security-group/compare/v3.18.0...v4.0.0
 [v3.18.0]: https://github.com/terraform-aws-modules/terraform-aws-security-group/compare/v3.17.0...v3.18.0
 [v3.17.0]: https://github.com/terraform-aws-modules/terraform-aws-security-group/compare/v3.16.0...v3.17.0
 [v3.16.0]: https://github.com/terraform-aws-modules/terraform-aws-security-group/compare/v3.15.0...v3.16.0
